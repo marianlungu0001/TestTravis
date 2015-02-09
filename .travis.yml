@@ -18,7 +18,7 @@ before_script:
 - psql -U postgres -c "create extension postgis"
 - sudo su postgres -c "psql -d gigwalk_apps_test -f /usr/share/postgresql/9.3/contrib/postgis-2.1/postgis.sql"
 - sudo su postgres -c "psql -d gigwalk_apps_test -f /usr/share/postgresql/9.3/contrib/postgis-2.1/spatial_ref_sys.sql"
-script: py.test -v -m all
+
 env:
   global:
   - secure: dhvcwNJ5mC/aOi4ERCRHsOTlqLyPWwdYbpGOXFOuxQLPcNmKWHFkGyCdaBLV6RXTiSPYdwevq/xde4gA2ihU/qfg7+8j0WzORIJQ2HLTACts7HmU4NszmcZrlwxO4W1E7iv6yQkOflh0XHytvfEodr+f70f6sl122ctAYCQlJGg=
